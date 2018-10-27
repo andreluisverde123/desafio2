@@ -1,0 +1,125 @@
+body{
+    font-weight: bold;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-radius: 8px;
+}
+label{
+    font-size: 12pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+  .form-contact {
+    width: 100%;
+    font-family: "Arial", Times, serif;
+  }
+  
+  .form-contact-input {
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+  }
+
+
+  .form-contact-button {
+    width: auto;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #2E8B57;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 0.3s;
+  }
+  
+  .form-contact-button:hover {
+    opacity: 1;
+  }
+
+  .form-contact-button-editar {
+    width: auto;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: rgb(78, 20, 187);
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 0.3s;
+  }
+  
+  .form-contact-button-editar:hover {
+    opacity: 1;
+  }
+
+  .form-contact-button-apagar {
+    width: auto;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: rgb(199, 11, 11);
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 0.3s;
+  }
+  
+  .form-contact-button-apagar:hover {
+    opacity: 1;
+  }
+
+
+  .wrapper{
+    width:auto;
+    margin:0 auto;
+  }
+  
+  ul{
+    margin:0;
+    padding:0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style:none;
+  }
+  ul li{
+  
+      padding:20px;
+      margin-top:20px;
+      background-color:rgba(255,255,255,0.9);
+     -webkit-border-radius:3px;
+     -moz-border-radius:3px;
+      border-radius:3px;
+     -webkit-box-shadow: 0px 0px 2px #888888;
+     -moz-box-shadow: 0px 0px 2px #888888;
+       box-shadow: 0px 0px 2px #888888;
+      
+  }

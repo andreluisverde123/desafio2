@@ -1,0 +1,56 @@
+   <div class="form">
+        <label for="name">Nome: </label>
+        <input type="text" id="name" [(ngModel)]="person.name" class="form-contact-input">
+
+        <label for="email">E-mail: </label>
+        <input type="text" id="email" [(ngModel)]="person.email" class="form-contact-input">
+
+        <label for="phone">Telefone: </label>
+        <input type="text" id="phone" [(ngModel)]="person.phone" class="form-contact-input">
+
+        <label for="gender">Gênero: </label>
+        <select id="gender" [(ngModel)]="person.gender" class="form-contact-input">
+          <option value="MALE">Masculino</option>
+          <option value="FEMALE">Feminino</option>
+          <option value="OTHER">Other</option>
+        </select>
+
+        <label for="birthday">Aniversário: </label>
+        <input type="text" id="birthday" [(ngModel)]="person.birthday" class="form-contact-input">
+        <br>
+        <button (click)="save()" class="form-contact-button">Salvar</button>
+  </div>
+
+
+
+
+  <div class="wrapper">
+  <div class="contacts">
+    <div *ngIf="loading">
+      Carregando...
+    </div>
+    <ul *ngIf="!loading" class="menu">
+      <li *ngFor="let item of items; let i = index;">
+        <h2>{{ item.name }} </h2>
+        <p class="likes">
+          <strong>E-mail</strong>: {{ item.email }}
+        </p>
+        <p class="likes">
+          <strong>Telefone</strong>: {{ item.phone }}
+        </p>
+        <p class="likes">
+          <strong>Gender</strong>: {{ item.gender ? item.gender : 'Não informado' }}
+        </p>
+        <p class="likes">
+          <strong>E-mail</strong>: {{ item.email }}
+        </p>
+        <p class="likes">
+          <strong>Aniversário</strong>: {{ item.birthday ? item.birthday: 'Não informado' }}
+        </p>
+        <button (click)="edit(item)"class="form-contact-button-editar" >Editar</button>
+        
+        <button (click)="delete(item)" class="form-contact-button-apagar">Apagar contato</button>
+      </li>
+    </ul>
+  </div>
+</div>  
